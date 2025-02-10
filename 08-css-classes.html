@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
     <style>
+        /**As tags podem receber css de forma individualizada**/
         p{
             color: green;
         }
+        /**A classe é representada por um . Antes do nome.**/
+        /**A classe sobrepõe os estilos de seletores diteros**/
         .vermelho{
             color: red;
         }
@@ -15,8 +18,11 @@
             color: blue;
         }
         .bgciano{
+            /**background é um atributo com mais configurações, sendo aqui trocado somennte a cor de fundo.**/
             background-color: aqua;
         }
+        /**O id sobrepõe a classe**/
+        /**o id sobrepõe a classe**/
         #roxo{ /**# para selecionar id.**/
             color: purple;
         }
@@ -30,6 +36,8 @@
     <p class="bgciano">Eu tenho background ciano</p>
     <p class="azul" id="roxo">Atenção!</p>
     <p id="roxo" class="bgciano" style="color: brown;background-color: pink;">Tudo Muda</p>
+    <!--CSS inline sobrepõe orfem e hd-->
     <p class="bgciano vermelho">Aqui é azul e vermelho</p>
+    <!--Classe e id mão podem começar por números, mas sim-->
 </body>
 </html>
